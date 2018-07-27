@@ -13,7 +13,6 @@ if ($subtitle !== '') {
     </div>
 
 </header>
-
 <section class="section-content container">
     <!-- #container -->
     <div id="" class="grid" role="main">
