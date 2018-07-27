@@ -28,11 +28,12 @@ if ($subtitle !== '') {
 				endif;
 			?>
     </div>
-    <!-- #content -->
+    <!-- category content -->
     <?php wordpress_numeric_post_nav(); ?>
 
 
 </section>
+<!-- category page -->
 
 
 <?php get_footer();

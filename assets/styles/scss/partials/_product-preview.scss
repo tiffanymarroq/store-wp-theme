@@ -1,0 +1,107 @@
+
+.post-content {
+    padding-bottom: 60px;
+    @include bp(sm) {}
+    .post-title-content {
+      margin-bottom: 45px;
+      text-align: center;
+      color: $dark-gray;
+      text-shadow: none;
+      @include bp(md) {
+        text-align: left;
+      }
+    }
+    .post-info-content {
+      text-align: justify;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  
+  .post-bg {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .post-text {
+      @include bp(md) {
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        text-align: left;
+      }
+      @include bp(lg) {
+        left: 150px;
+        bottom: 130px;
+      }
+      .large-text {
+        @include bp(md) {
+          text-align: left;
+        }
+      } // .subtitle-text{
+      //   @include bp(xs){
+      //     font-size: 1rem;
+      //   }
+      // }
+    }
+  }
+  
+  .post-image {
+    display: block;
+  }
+  
+  .post-description {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  .post-title {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 10px;
+    .subtitle-text {
+      color: $white;
+      font-weight: 300; // font-size: .8rem;
+      opacity: 1;
+      animation: none;
+      @include bp(sm) {
+        font-size: 1rem;
+      }
+      @include bp(md) {
+        font-size: 1.2rem;
+      }
+    }
+    h1 {
+      // font-weight: 600;
+      margin-left: 10px;
+      font-size: 1.8rem;
+      
+      @include bp(sm) {
+        font-size: 2rem;
+        line-height: 1;
+      }
+  
+    }
+  }

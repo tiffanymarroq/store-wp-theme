@@ -1,0 +1,30 @@
+a {
+  color: $white;
+}
+
+.footer-info {
+  text-align: left;
+  .text-title {
+    color: $white;
+  }
+  .info {
+    margin-bottom: 40px;
+    @include bp(mid) {
+      margin-bottom: 0px;
+    }
+  }
+  button {
+    margin-top: 25px;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.copyright {
+  color: $white;
+  margin-top: 0px;
+  text-align: center;
+  @include bp(mid) {
+    margin-top: 20px;
+  }
+}

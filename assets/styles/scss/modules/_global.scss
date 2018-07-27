@@ -121,3 +121,16 @@ img {
     }
 }
 
+.site-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+}
+

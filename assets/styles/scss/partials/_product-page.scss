@@ -1,0 +1,29 @@
+.product-container {
+    margin-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 0;
+    @include bp(mid) {
+        margin-top: 100px;
+        padding-bottom: 40px;
+    }
+    .product-info {
+        margin: 50px 0 50px;
+        h1 {
+            font-size: 1.8rem;
+            line-height: 1;
+            margin-bottom: 20px;
+            @include bp(sm) {
+                font-size: 2rem;
+            }
+        }
+        @include bp(mid) {
+            display: block;
+            position: relative;
+            min-height: 500px; 
+            animation: slideUp .5s ease-out;
+            animation-fill-mode: forwards;
+            cursor: default;
+            margin-top: 0;
+        }
+    }
+}

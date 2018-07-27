@@ -5,10 +5,15 @@
 @import 'modules/_mixins';
 @import 'modules/_keyframes';
 @import 'modules/_buttons';
+@import 'modules/_grid';
 @import 'modules/_global';
+
 
 
 //Partials
 @import 'partials/_navigation';
 @import 'partials/_home';
 @import 'partials/_footer';
+@import 'partials/_product-page';
+@import 'partials/_product-preview';
+
