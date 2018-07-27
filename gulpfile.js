@@ -14,8 +14,8 @@ var pump = require('pump');
 
 
 var paths = {
-    scripts: ['assets/scripts/**/*.js', '!assets/js/js-image-zoom.js'],
-    styleSCSS: ['./assets/styles/scss**/*.scss'],
+    scripts: ['assets/scripts/**/*.js'],
+    styleSCSS: ['./assets/styles/scss/**/*.scss'],
     styleCSS: ['./assets/styles/css/**/*.css'],
     images: ['./assets/images/**/*.png']
 }
@@ -30,7 +30,7 @@ gulp.task('sass', function () {
         }))
         .pipe(cssnano())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./assets/css'))
+        .pipe(gulp.dest('./assets/styles/css/'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -61,7 +61,7 @@ gulp.task('styles', function(){
 gulp.task('browserSync', function () {
     browserSync.init({
         proxy: {
-            // target: 'http://rentagown.test', add folder path / add local dev path
+            target: 'http://rentagown.test'
         } 
     })
 })

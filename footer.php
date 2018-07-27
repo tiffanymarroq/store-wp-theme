@@ -26,9 +26,9 @@
                 </div>
                 <div class="col-sm-12 col-lg-3 info">
                     <p class="text-title">Contact Information</p>
-                    <p>Rent A Gown</p>
-                    <p>2703 E. South Street <br> Orlando, FL 32803 </p>
-                    <p>(407)-635-0842</p>
+                    <p>NAME</p>
+                    <p>ADDRESS </p>
+                    <p>NUMBER</p>
                 </div>
             </div>
         </div>
